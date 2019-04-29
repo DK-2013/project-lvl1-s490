@@ -1,6 +1,6 @@
 {
   "name": "brain-games-dk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Set simple text games",
   "main": "dist/index.js",
   "bin": {
@@ -23,6 +23,9 @@
   ],
   "author": "Dmitry",
   "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
