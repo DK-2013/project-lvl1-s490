@@ -1,8 +1,11 @@
 {
-  "name": "brain-games",
+  "name": "brain-games-dk",
   "version": "0.0.1",
   "description": "Set simple text games",
   "main": "dist/index.js",
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
   "files": [
     "dist"
   ],
