@@ -7,5 +7,11 @@
 ## Setup
 
 ```sh
-$ make install
+$ npm install -g brain-games-dk
 ```
+
+## Brain even
+```
+brain-even
+```
+[![asciicast](https://asciinema.org/a/QLLIQVrtMcXWDJZIxBLXppHtG.svg)](https://asciinema.org/a/QLLIQVrtMcXWDJZIxBLXppHtG?t=11&speed=3&theme=monokai)
