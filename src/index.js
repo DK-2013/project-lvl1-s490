@@ -1,21 +1,15 @@
 import readlineSync from 'readline-sync';
-import brainEven from './brain-even';
-
-const getGame = (name) => {
-  switch (name) {
-    case 'even': return brainEven;
-    default: return { run: () => {} };
-  }
-};
+import dispatcher from './dispatch';
+import start from './baseFlow';
 
 export default (gameName) => {
-  const game = getGame(gameName);
+  const Game = dispatcher(gameName);
 
   console.log('Welcome to the Brain Games!');
-  console.log(`${game.description || ''}`);
+  console.log(Game.description);
 
   const userName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${userName}\n`);
 
-  game.run(userName);
+  start(userName, Game);
 };

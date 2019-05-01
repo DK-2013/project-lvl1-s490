@@ -5,13 +5,19 @@
 [![Build Status](https://travis-ci.org/DK-2013/project-lvl1-s490.svg?branch=master)](https://travis-ci.org/DK-2013/project-lvl1-s490)
 
 ## Setup
-
 ```sh
 $ npm install -g brain-games-dk
 ```
 
-## Brain even
+
+## Brain-game even
 ```
 brain-even
 ```
-[![asciicast](https://asciinema.org/a/QLLIQVrtMcXWDJZIxBLXppHtG.svg)](https://asciinema.org/a/QLLIQVrtMcXWDJZIxBLXppHtG?t=11&speed=3&theme=monokai)
+[![asciicast](https://asciinema.org/a/PptA9MZvqIj8bWwMjPpCXaKzd.svg)](https://asciinema.org/a/PptA9MZvqIj8bWwMjPpCXaKzd?speed=2)
+
+## Brain-game calc
+```
+brain-calc
+```
+[![asciicast](https://asciinema.org/a/RH3kinH11jDeAWy2dV8ew723D.svg)](https://asciinema.org/a/RH3kinH11jDeAWy2dV8ew723D?speed=2)
