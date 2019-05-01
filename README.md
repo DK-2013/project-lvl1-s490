@@ -8,7 +8,7 @@
 ```sh
 $ npm install -g brain-games-dk
 ```
-
+[![asciicast](https://asciinema.org/a/T3yz5OUGqb8aWYxQAiBYMrk9f.svg)](https://asciinema.org/a/T3yz5OUGqb8aWYxQAiBYMrk9f?speed=2)
 
 ## Brain-game even
 ```
