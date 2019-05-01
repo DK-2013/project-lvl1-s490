@@ -1,6 +1,6 @@
 import { getNumber } from '../baseFlow';
 
-class BrainEven {
+class Even {
   static get description() {
     return 'Answer "yes" if number even otherwise answer "no"';
   }
@@ -22,4 +22,4 @@ class BrainEven {
   }
 }
 
-export default BrainEven;
+export default Even;

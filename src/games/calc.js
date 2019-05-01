@@ -11,7 +11,7 @@ const operationMap = {
   '*': (a, b) => a * b,
 };
 
-class BrainCalc {
+class Calc {
   static get description() {
     return 'What is the result of the expression?';
   }
@@ -35,4 +35,4 @@ class BrainCalc {
   }
 }
 
-export default BrainCalc;
+export default Calc;

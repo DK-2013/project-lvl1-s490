@@ -5,7 +5,7 @@ const calcGcd = (a, b) => {
   return calcGcd(b, a % b);
 };
 
-class BrainGcd {
+class Gcd {
   static get description() {
     return 'Find the greatest common divisor of given numbers.';
   }
@@ -28,4 +28,4 @@ class BrainGcd {
   }
 }
 
-export default BrainGcd;
+export default Gcd;

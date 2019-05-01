@@ -10,13 +10,13 @@ $ npm install -g brain-games-dk
 ```
 [![asciicast](https://asciinema.org/a/T3yz5OUGqb8aWYxQAiBYMrk9f.svg)](https://asciinema.org/a/T3yz5OUGqb8aWYxQAiBYMrk9f?speed=2)
 
-## Brain-game even
+## Brain-game Is even?
 ```
 brain-even
 ```
 [![asciicast](https://asciinema.org/a/PptA9MZvqIj8bWwMjPpCXaKzd.svg)](https://asciinema.org/a/PptA9MZvqIj8bWwMjPpCXaKzd?speed=2)
 
-## Brain-game calc
+## Brain-game Calculator
 ```
 brain-calc
 ```
@@ -27,3 +27,9 @@ brain-calc
 brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/B9DV3kw2vTPJ41oUFSVbQomYD.svg)](https://asciinema.org/a/B9DV3kw2vTPJ41oUFSVbQomYD?speed=2)
+
+## Brain-game Arithmetic progression
+```
+brain-progress
+```
+[![asciicast](https://asciinema.org/a/NQ4IREx3NVGQUKfDiYagQX031.svg)](https://asciinema.org/a/NQ4IREx3NVGQUKfDiYagQX031?speed=2)
