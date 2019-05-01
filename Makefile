@@ -13,8 +13,11 @@ start-calc:
 start-gcd:
 	npx babel-node src/bin/brain-gcd.js
 
-start-progr:
+start-progress:
 	npx babel-node src/bin/brain-progression.js
+
+start-prime:
+	npx babel-node src/bin/brain-prime.js
 
 lint:
 	npx eslint

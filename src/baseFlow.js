@@ -5,12 +5,13 @@ const maxRound = 3;
 const ask = (stage) => {
   console.log(`Question: ${stage.getQuestion()}`);
   const answer = readlineSync.question('Your answer: ');
-  if (stage.checkAnswer(answer)) {
+  const isCorrect = stage.checkAnswer(answer);
+  if (isCorrect) {
     console.log('Correct!');
   } else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${stage.getAnswer()}'.`);
   }
-  return stage.checkAnswer(answer);
+  return isCorrect;
 };
 
 export default (userName, Stage) => {

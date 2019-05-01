@@ -6,10 +6,10 @@ export default (gameName) => {
   const Game = dispatcher(gameName);
 
   console.log('Welcome to the Brain Games!');
-  console.log(Game.description);
+  if (Game) console.log(Game.description);
 
   const userName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${userName}\n`);
 
-  start(userName, Game);
+  if (Game) start(userName, Game);
 };

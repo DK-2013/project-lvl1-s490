@@ -11,25 +11,30 @@ $ npm install -g brain-games-dk
 [![asciicast](https://asciinema.org/a/T3yz5OUGqb8aWYxQAiBYMrk9f.svg)](https://asciinema.org/a/T3yz5OUGqb8aWYxQAiBYMrk9f?speed=2)
 
 ## Brain-game Is even?
-```
-brain-even
+```sh
+$ brain-even
 ```
 [![asciicast](https://asciinema.org/a/PptA9MZvqIj8bWwMjPpCXaKzd.svg)](https://asciinema.org/a/PptA9MZvqIj8bWwMjPpCXaKzd?speed=2)
 
 ## Brain-game Calculator
-```
-brain-calc
+```sh
+$ brain-calc
 ```
 [![asciicast](https://asciinema.org/a/RH3kinH11jDeAWy2dV8ew723D.svg)](https://asciinema.org/a/RH3kinH11jDeAWy2dV8ew723D?speed=2)
 
 ## Brain-game GCD
-```
-brain-gcd
+```sh
+$ brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/B9DV3kw2vTPJ41oUFSVbQomYD.svg)](https://asciinema.org/a/B9DV3kw2vTPJ41oUFSVbQomYD?speed=2)
 
 ## Brain-game Arithmetic progression
+```sh
+$ brain-progress
 ```
-brain-progress
+[![asciicast](https://asciinema.org/a/NQ4IREx3NVGQUKfDiYagQX031.svg)](https://asciinema.org/a/NQ4IREx3NVGQUKfDiYagQX031?speed=4)
+## Brain-game Prime numbers
+```sh
+$ brain-prime
 ```
-[![asciicast](https://asciinema.org/a/NQ4IREx3NVGQUKfDiYagQX031.svg)](https://asciinema.org/a/NQ4IREx3NVGQUKfDiYagQX031?speed=2)
+[![asciicast](https://asciinema.org/a/YnEkzcaBzedn6pcSUZcVkJsty.svg)](https://asciinema.org/a/YnEkzcaBzedn6pcSUZcVkJsty?speed=2)
