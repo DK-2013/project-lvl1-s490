@@ -21,3 +21,9 @@ brain-even
 brain-calc
 ```
 [![asciicast](https://asciinema.org/a/RH3kinH11jDeAWy2dV8ew723D.svg)](https://asciinema.org/a/RH3kinH11jDeAWy2dV8ew723D?speed=2)
+
+## Brain-game GCD
+```
+brain-gcd
+```
+[![asciicast](https://asciinema.org/a/B9DV3kw2vTPJ41oUFSVbQomYD.svg)](https://asciinema.org/a/B9DV3kw2vTPJ41oUFSVbQomYD?speed=2)
