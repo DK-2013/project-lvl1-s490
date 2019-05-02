@@ -1,7 +1,20 @@
 {
   "name": "brain-games-dk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Handful numbers games",
+  "keywords": [
+    "brain-games",
+    "numbers game"
+  ],
+  "homepage": "https://github.com/DK-2013/project-lvl1-s490",
+  "author": "Dmitry",
+  "bugs": {
+    "url": "https://github.com/DK-2013/project-lvl1-s490/issues"
+  },
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -11,23 +24,15 @@
     "brain-progress": "dist/bin/brain-progression.js",
     "brain-prime": "dist/bin/brain-prime.js"
   },
-  "files": [
-    "dist"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DK-2013/project-lvl1-s490.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DK-2013/project-lvl1-s490.git"
-  },
-  "keywords": [
-    "textgame"
-  ],
-  "author": "Dmitry",
-  "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.9"
   },
@@ -41,5 +46,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.17.2"
+  },
+  "engines": {
+    "node": ">=10"
   }
 }

@@ -1,31 +1,20 @@
-import { getNumber } from '../baseFlow';
+import { getRandomInt } from '../baseFlow';
 
 const calcGcd = (a, b) => {
   if (!(a % b)) return b;
   return calcGcd(b, a % b);
 };
 
-class Gcd {
-  static get description() {
-    return 'Find the greatest common divisor of given numbers.';
-  }
+export default {
+  description: 'Find the greatest common divisor of given numbers.',
 
-  constructor() {
-    this.num1 = getNumber();
-    this.num2 = getNumber();
-  }
+  initGame() {
+    const int1 = getRandomInt();
+    const int2 = getRandomInt();
 
-  getQuestion() {
-    return `${this.num1}, ${this.num2}`;
-  }
-
-  checkAnswer(answer) {
-    return this.getAnswer() === Number(answer);
-  }
-
-  getAnswer() {
-    return calcGcd(...[this.num1, this.num2].sort((a, b) => a - b));
-  }
-}
-
-export default Gcd;
+    return {
+      question: `${int1}, ${int2}`,
+      correctAnswer: calcGcd(...[int1, int2].sort((a, b) => a - b)),
+    };
+  },
+};

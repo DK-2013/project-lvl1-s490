@@ -1,8 +1,8 @@
-import { getNumber } from '../baseFlow';
+import { getRandomInt } from '../baseFlow';
 
 const getOperation = () => {
   const operation = ['+', '-', '*'];
-  return operation[Math.floor(Math.random() * 3)];
+  return operation[getRandomInt(3, true)];
 };
 
 const operationMap = {
@@ -11,28 +11,17 @@ const operationMap = {
   '*': (a, b) => a * b,
 };
 
-class Calc {
-  static get description() {
-    return 'What is the result of the expression?';
-  }
+export default {
+  description: 'What is the result of the expression?',
 
-  constructor() {
-    this.num1 = getNumber();
-    this.num2 = getNumber();
-    this.operation = getOperation();
-  }
+  initGame() {
+    const int1 = getRandomInt();
+    const int2 = getRandomInt();
+    const operation = getOperation();
 
-  getQuestion() {
-    return `${this.num1} ${this.operation} ${this.num2}`;
-  }
-
-  checkAnswer(answer) {
-    return this.getAnswer() === Number(answer);
-  }
-
-  getAnswer() {
-    return operationMap[this.operation](this.num1, this.num2);
-  }
-}
-
-export default Calc;
+    return {
+      question: `${int1} ${operation} ${int2}`,
+      correctAnswer: operationMap[operation](int1, int2),
+    };
+  },
+};

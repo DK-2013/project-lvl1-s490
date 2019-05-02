@@ -1,25 +1,14 @@
-import { getNumber } from '../baseFlow';
+import { getRandomInt } from '../baseFlow';
 
-class Even {
-  static get description() {
-    return 'Answer "yes" if number even otherwise answer "no"';
-  }
+export default {
+  description: 'Answer "yes" if number even otherwise answer "no"',
 
-  constructor() {
-    this.number = getNumber();
-  }
+  initGame: () => {
+    const int = getRandomInt();
 
-  getQuestion() {
-    return this.number;
-  }
-
-  checkAnswer(answer) {
-    return this.getAnswer() === answer;
-  }
-
-  getAnswer() {
-    return this.number % 2 ? 'no' : 'yes';
-  }
-}
-
-export default Even;
+    return {
+      question: int,
+      correctAnswer: int % 2 ? 'no' : 'yes',
+    };
+  },
+};

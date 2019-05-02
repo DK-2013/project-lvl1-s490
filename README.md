@@ -8,33 +8,33 @@
 ```sh
 $ npm install -g brain-games-dk
 ```
-[![asciicast](https://asciinema.org/a/T3yz5OUGqb8aWYxQAiBYMrk9f.svg)](https://asciinema.org/a/T3yz5OUGqb8aWYxQAiBYMrk9f?speed=2)
+[![asciicast](https://asciinema.org/a/o1ktGY7rHtfHUJbfDz9W4mNGR.svg)](https://asciinema.org/a/o1ktGY7rHtfHUJbfDz9W4mNGR?speed=2&theme=monokai)
 
 ## Brain-game Is even?
 ```sh
 $ brain-even
 ```
-[![asciicast](https://asciinema.org/a/PptA9MZvqIj8bWwMjPpCXaKzd.svg)](https://asciinema.org/a/PptA9MZvqIj8bWwMjPpCXaKzd?speed=2)
+[![asciicast](https://asciinema.org/a/W799AOYIzHsdFqkgaRBgGVrLF.svg)](https://asciinema.org/a/W799AOYIzHsdFqkgaRBgGVrLF?speed=4&theme=monokai)
 
 ## Brain-game Calculator
 ```sh
 $ brain-calc
 ```
-[![asciicast](https://asciinema.org/a/RH3kinH11jDeAWy2dV8ew723D.svg)](https://asciinema.org/a/RH3kinH11jDeAWy2dV8ew723D?speed=2)
+[![asciicast](https://asciinema.org/a/Wwqi1i3lM1306vfzesJCGFA6K.svg)](https://asciinema.org/a/Wwqi1i3lM1306vfzesJCGFA6K?speed=4&theme=monokai)
 
 ## Brain-game GCD
 ```sh
 $ brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/B9DV3kw2vTPJ41oUFSVbQomYD.svg)](https://asciinema.org/a/B9DV3kw2vTPJ41oUFSVbQomYD?speed=2)
+[![asciicast](https://asciinema.org/a/KhtuA00hvAPQxNEZAqYWMmfvl.svg)](https://asciinema.org/a/KhtuA00hvAPQxNEZAqYWMmfvl?speed=4&theme=monokai)
 
 ## Brain-game Arithmetic progression
 ```sh
 $ brain-progress
 ```
-[![asciicast](https://asciinema.org/a/NQ4IREx3NVGQUKfDiYagQX031.svg)](https://asciinema.org/a/NQ4IREx3NVGQUKfDiYagQX031?speed=4)
+[![asciicast](https://asciinema.org/a/mo7FFlLbMNuXq31TcGD9fi2Xo.svg)](https://asciinema.org/a/mo7FFlLbMNuXq31TcGD9fi2Xo?speed=4&theme=monokai)
 ## Brain-game Prime numbers
 ```sh
 $ brain-prime
 ```
-[![asciicast](https://asciinema.org/a/YnEkzcaBzedn6pcSUZcVkJsty.svg)](https://asciinema.org/a/YnEkzcaBzedn6pcSUZcVkJsty?speed=2)
+[![asciicast](https://asciinema.org/a/nalwqdfYnbQlFi2oosBcwDAqs.svg)](https://asciinema.org/a/nalwqdfYnbQlFi2oosBcwDAqs?speed=4&theme=monokai)

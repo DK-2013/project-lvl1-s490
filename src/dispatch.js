@@ -12,4 +12,4 @@ const map = {
   prime: gamePrime,
 };
 
-export default gameName => map[gameName];
+export default gameName => map[gameName] || {};

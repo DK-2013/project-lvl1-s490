@@ -1,3 +1,5 @@
+import { getRandomInt } from '../baseFlow';
+
 const primeNumbersMap = {
   2: true,
   3: true,
@@ -27,26 +29,15 @@ const primeNumbersMap = {
 };
 
 
-class Prime {
-  static get description() {
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  }
+export default {
+  description: 'Answer "yes" if given number is prime. Otherwise answer "no".',
 
-  constructor() {
-    this.number = Math.ceil(Math.random() * 100);
-  }
+  initGame() {
+    const int = getRandomInt(100);
 
-  getQuestion() {
-    return this.number;
-  }
-
-  checkAnswer(answer) {
-    return this.getAnswer() === answer;
-  }
-
-  getAnswer() {
-    return primeNumbersMap[this.number] ? 'yes' : 'no';
-  }
-}
-
-export default Prime;
+    return {
+      question: int,
+      correctAnswer: primeNumbersMap[int] ? 'yes' : 'no',
+    };
+  },
+};
