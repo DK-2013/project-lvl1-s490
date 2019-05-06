@@ -1,23 +1,25 @@
-import { getRandomInt } from '../baseFlow';
+import start, { getRandomInt } from '../baseFlow';
+
+const progressionLength = 10;
 
 const getProgression = () => {
-  const start = getRandomInt(10);
+  const begin = getRandomInt(10);
   const dif = getRandomInt(7);
-  const stuff = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  return stuff.map(a => start + a * dif);
+  const stuff = [...Array(progressionLength).keys()];
+  return stuff.map(a => begin + a * dif);
+};
+
+const initStage = () => {
+  const progression = getProgression();
+  const excludeIdx = getRandomInt(0, progressionLength - 1);
+  const predicate = (a, idx) => (idx === excludeIdx ? '..' : a);
+  const question = progression.map(predicate).join(' ');
+  const correctAnswer = progression[excludeIdx];
+
+  return { question, correctAnswer };
 };
 
 export default {
   description: 'What number is missing in the progression?',
-
-  initGame() {
-    const progression = getProgression();
-    const excludeIdx = getRandomInt(10, true);
-    const predicate = (a, idx) => (idx === excludeIdx ? '..' : a);
-
-    return {
-      question: progression.map(predicate).join(' '),
-      correctAnswer: progression[excludeIdx],
-    };
-  },
+  initGame: userName => start(userName, initStage),
 };

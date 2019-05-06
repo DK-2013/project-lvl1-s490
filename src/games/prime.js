@@ -1,43 +1,28 @@
-import { getRandomInt } from '../baseFlow';
+import start, { getRandomInt } from '../baseFlow';
 
-const primeNumbersMap = {
-  2: true,
-  3: true,
-  5: true,
-  7: true,
-  11: true,
-  13: true,
-  17: true,
-  19: true,
-  23: true,
-  29: true,
-  31: true,
-  37: true,
-  41: true,
-  43: true,
-  47: true,
-  53: true,
-  59: true,
-  61: true,
-  67: true,
-  71: true,
-  73: true,
-  79: true,
-  83: true,
-  89: true,
-  97: true,
+const isPrime = (number) => {
+  if (number <= 1) return false;
+  if (number <= 3) return true;
+  if (number % 2 === 0 || number % 3 === 0) return false;
+
+  const fn = (cnt) => {
+    if (cnt * cnt > number) return true;
+    if (number % cnt === 0 || number % (cnt + 2) === 0) return false;
+    return fn(cnt + 6);
+  };
+
+  return fn(5, false);
 };
 
 
+const initStage = () => {
+  const question = getRandomInt(100);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+
+  return { question, correctAnswer };
+};
+
 export default {
   description: 'Answer "yes" if given number is prime. Otherwise answer "no".',
-
-  initGame() {
-    const int = getRandomInt(100);
-
-    return {
-      question: int,
-      correctAnswer: primeNumbersMap[int] ? 'yes' : 'no',
-    };
-  },
+  initGame: userName => start(userName, initStage),
 };

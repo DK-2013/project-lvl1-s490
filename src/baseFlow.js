@@ -1,6 +1,13 @@
 import readlineSync from 'readline-sync';
 
-export const getRandomInt = (max = 30, fromZero = false) => Math[fromZero ? 'floor' : 'ceil'](Math.random() * max);
+export const getRandomInt = (...args) => {
+  const defaultRange = [1, 30];
+  let min; let max;
+  if (args.length === 0) [min, max] = defaultRange;
+  if (args.length === 1) [min, max] = [defaultRange[0], args[0]];
+  if (args.length > 1) [min, max] = args;
+  return Math.floor(Math.random() * max) + min;
+};
 
 const startStage = 0;
 const endStage = 3;
@@ -15,13 +22,13 @@ const runStage = ({ question, correctAnswer }) => {
   return isCorrect;
 };
 
-export default (userName, initGame) => {
+export default (userName, initStage) => {
   const iter = (stageCnt) => {
     if (stageCnt === endStage) {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const correct = runStage(initGame());
+    const correct = runStage(initStage());
     if (correct) iter(stageCnt + 1);
     else console.log(`Let's try again, ${userName}!`);
   };

@@ -20,7 +20,7 @@ start-prime:
 	npx babel-node src/bin/brain-prime.js
 
 lint:
-	npx eslint
+	npx eslint .
 
 publish:
 	npm publish

@@ -1,20 +1,24 @@
-import { getRandomInt } from '../baseFlow';
+import start, { getRandomInt } from '../baseFlow';
 
-const calcGcd = (a, b) => {
-  if (!(a % b)) return b;
-  return calcGcd(b, a % b);
+
+const calcGcd = ([...args]) => {
+  const iter = (a, b) => {
+    if (!(a % b)) return b;
+    return iter(b, a % b);
+  };
+  iter(Math.max(args), Math.min(args));
+};
+
+const initStage = () => {
+  const int1 = getRandomInt();
+  const int2 = getRandomInt();
+  const question = `${int1}, ${int2}`;
+  const correctAnswer = calcGcd(int1, int2);
+
+  return { question, correctAnswer };
 };
 
 export default {
   description: 'Find the greatest common divisor of given numbers.',
-
-  initGame() {
-    const int1 = getRandomInt();
-    const int2 = getRandomInt();
-
-    return {
-      question: `${int1}, ${int2}`,
-      correctAnswer: calcGcd(...[int1, int2].sort((a, b) => a - b)),
-    };
-  },
+  initGame: userName => start(userName, initStage),
 };
