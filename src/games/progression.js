@@ -1,4 +1,7 @@
-import start, { getRandomInt } from '../baseFlow';
+import getRandomInt from '../utils';
+import start from '..';
+
+const description = 'What number is missing in the progression?';
 
 const progressionLength = 10;
 
@@ -19,7 +22,6 @@ const initStage = () => {
   return { question, correctAnswer };
 };
 
-export default {
-  description: 'What number is missing in the progression?',
-  initGame: userName => start(userName, initStage),
+export default () => {
+  start(description, initStage);
 };

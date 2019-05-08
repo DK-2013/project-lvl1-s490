@@ -1,4 +1,7 @@
-import start, { getRandomInt } from '../baseFlow';
+import getRandomInt from '../utils';
+import start from '..';
+
+const description = 'What is the result of the expression?';
 
 const operationMap = {
   '+': (a, b) => a + b,
@@ -23,7 +26,6 @@ const initStage = () => {
   return { question, correctAnswer };
 };
 
-export default {
-  description: 'What is the result of the expression?',
-  initGame: userName => start(userName, initStage),
+export default () => {
+  start(description, initStage);
 };

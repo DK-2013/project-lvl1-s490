@@ -1,6 +1,9 @@
-import start, { getRandomInt } from '../baseFlow';
+import getRandomInt from '../utils';
+import start from '..';
 
-const isEven = number => Boolean(number % 2);
+const description = 'Answer "yes" if number even otherwise answer "no"';
+
+const isEven = number => number % 2 === 0;
 
 const initStage = () => {
   const question = getRandomInt();
@@ -9,7 +12,6 @@ const initStage = () => {
   return { question, correctAnswer };
 };
 
-export default {
-  description: 'Answer "yes" if number even otherwise answer "no"',
-  initGame: userName => start(userName, initStage),
+export default () => {
+  start(description, initStage);
 };
