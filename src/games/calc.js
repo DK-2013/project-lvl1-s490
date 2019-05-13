@@ -21,7 +21,7 @@ const initStage = () => {
   const int2 = getRandomInt();
   const operation = getRandomOperation();
   const question = `${int1} ${operation} ${int2}`;
-  const correctAnswer = operationMap[operation](int1, int2);
+  const correctAnswer = String(operationMap[operation](int1, int2));
 
   return { question, correctAnswer };
 };

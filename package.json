@@ -1,6 +1,6 @@
 {
   "name": "brain-games-dk",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Handful numbers games",
   "keywords": [
     "brain-games",
@@ -16,7 +16,6 @@
     "dist"
   ],
   "bin": {
-    "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-gcd": "dist/bin/brain-gcd.js",

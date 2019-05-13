@@ -7,7 +7,7 @@ const isEven = number => number % 2 === 0;
 
 const initStage = () => {
   const question = getRandomInt();
-  const correctAnswer = isEven(question) ? 'no' : 'yes';
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
 
   return { question, correctAnswer };
 };

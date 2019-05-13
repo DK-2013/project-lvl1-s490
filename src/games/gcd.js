@@ -16,7 +16,7 @@ const initStage = () => {
   const int1 = getRandomInt();
   const int2 = getRandomInt();
   const question = `${int1}, ${int2}`;
-  const correctAnswer = calcGcd(int1, int2);
+  const correctAnswer = String(calcGcd(int1, int2));
 
   return { question, correctAnswer };
 };
